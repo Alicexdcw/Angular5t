@@ -1,0 +1,12 @@
+<!-- <h1 *ngIf="show">123132</h1>
+
+{{show}}
+<button (click)="xxxx()">Click Me</button> -->
+
+<input type="text" [(ngModel)]="score" >
+<p *ngIf="score >= 60">
+  好棒
+</p>
+<p *ngIf="60 > score">
+  好笨
+</p>
