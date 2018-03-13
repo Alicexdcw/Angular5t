@@ -1,0 +1,17 @@
+
+
+English:<input type="text" [(ngModel)]="zzz.English">
+Chinese:<input type="text" [(ngModel)]="zzz.Chinese">
+<button (click)="save()">save</button>
+Filter <input type="text"[(ngModel)]="filter">
+<table id="customers">
+  <tr>
+    <th>English</th>
+    <th>Chinese</th>
+  </tr>
+  <tr *ngFor="let s of ppp | filterByImpure:['English']:filter">
+    <td>{{s.English}}</td>
+    <td>{{s.Chinese}}</td>
+  </tr>
+  
+</table>
