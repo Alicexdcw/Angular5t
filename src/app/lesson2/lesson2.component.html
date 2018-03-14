@@ -3,7 +3,7 @@
 {{show}}
 <button (click)="xxxx()">Click Me</button> -->
 
-<input type="text" [(ngModel)]="score" >
+<input type="text" [(ngModel)]="score" (ngModelChang)="chang($event)" >
 <p *ngIf="score >= 60">
   好棒
 </p>

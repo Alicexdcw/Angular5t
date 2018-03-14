@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-lesson2',
@@ -7,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson2Component implements OnInit {
 
-  score = 60;
+  @Input() score = 60;
 
+  @Output() countChange:EventEmitter<number> = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  change(event:any){
+   this.countChange.emit(event)
   }
 
 }
