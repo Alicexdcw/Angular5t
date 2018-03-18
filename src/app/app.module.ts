@@ -17,6 +17,7 @@ import { HightlightDirective } from './hightlight.directive';
 import { Lesson61Component } from './lesson6-1/lesson6-1.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-rounting.module';
+import { Homework1Component } from './homework1/homework1.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AppRoutingModule } from './app-rounting.module';
     InputButtonComponent,
     Lesson6Component,
     HightlightDirective,
-    Lesson61Component
+    Lesson61Component,
+    Homework1Component
   ],
   imports: [
     BrowserModule,

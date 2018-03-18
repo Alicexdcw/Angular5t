@@ -1,0 +1,20 @@
+
+
+
+姓名:<input type="text" [(ngModel)]="zzz.name">
+成績:<input type="text" [(ngModel)]="zzz.score">
+
+<button *ngIf="zzz.score >=0 && zzz.score<=100"  (click)="save()">save</button>
+<p *ngIf="zzz.score <0 || zzz.score>100">請輸入0~100</p>
+Filter <input type="text"[(ngModel)]="filter">
+<table id="customers">
+  <tr>
+    <th>姓名</th>
+    <th>成績</th>
+  </tr>
+  <tr *ngFor="let s of ppp | filterByImpure:['score']:filter">
+    <td>{{s.name}}</td>
+    <td>{{s.score}}</td>
+  </tr>
+  
+</table>

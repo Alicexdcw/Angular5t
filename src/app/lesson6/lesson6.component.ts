@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson6Component implements OnInit {
 
-  les6:number=0
+  les6:string;
 
 
   constructor() { }
@@ -15,21 +15,21 @@ export class Lesson6Component implements OnInit {
   ngOnInit() {
   }
 
-  change(event){
-    console.log(event)
+  change(event:any){
+    //console.log(event)
     this.les6 = event
   }
 
   aaa(){
-    console.log('大家好')
+    console.log("大家好");
   }
 
   bbb(){
-    
+    alert("Hello Ha");
   }
 
   ccc(){
-
+    this.les6="HI HI";
   }
 
 }

@@ -1,11 +1,8 @@
-<p>
-  lesson6 works!
-</p>
 
 <div>{{les6}}</div>
 
 <app-lesson2 (countChange)="change($event)"></app-lesson2>
 
-<app-input-button ></app-input-button>
-<app-input-button></app-input-button>
-<app-input-button></app-input-button>
+<app-input-button (onClick)="aaa()"></app-input-button>
+<app-input-button (onClick)="bbb()"></app-input-button>
+<app-input-button (onClick)="ccc()"></app-input-button>

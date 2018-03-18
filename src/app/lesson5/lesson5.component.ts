@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson5.component.css']
 })
 export class Lesson5Component implements OnInit {
-  
-  
 
+  ttt:String;
   constructor() { }
-  
+
   ngOnInit() {
   }
 
