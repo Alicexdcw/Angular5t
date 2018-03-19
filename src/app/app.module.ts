@@ -18,6 +18,8 @@ import { Lesson61Component } from './lesson6-1/lesson6-1.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-rounting.module';
 import { Homework1Component } from './homework1/homework1.component';
+import { Homework2Component } from './homework2/homework2.component';
+import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { Homework1Component } from './homework1/homework1.component';
     Lesson6Component,
     HightlightDirective,
     Lesson61Component,
-    Homework1Component
+    Homework1Component,
+    Homework2Component,
+    Homework2BtnComponent
   ],
   imports: [
     BrowserModule,
