@@ -20,6 +20,10 @@ import { AppRoutingModule } from './app-rounting.module';
 import { Homework1Component } from './homework1/homework1.component';
 import { Homework2Component } from './homework2/homework2.component';
 import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { JqeComponent } from './jqe/jqe.component';
+import { Lesson7Component } from './lesson7/lesson7.component';
+import { BmiService } from './bmi.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
     Lesson61Component,
     Homework1Component,
     Homework2Component,
-    Homework2BtnComponent
+    Homework2BtnComponent,
+    DyclassComponent,
+    JqeComponent,
+    Lesson7Component
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,9 @@ import { Homework2BtnComponent } from './homework2-btn/homework2-btn.component';
     AppRoutingModule
 
   ],
-  providers: [],
+  providers: [
+    BmiService
+  ], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

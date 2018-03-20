@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { BmiService } from '../bmi.service';
 
 
 @Component({
@@ -12,9 +13,10 @@ export class Lesson2Component implements OnInit {
 
   @Output() countChange:EventEmitter<number> = new EventEmitter<number>();
 
-  constructor() { }
+  constructor(private bmiService:BmiService) { }
 
   ngOnInit() {
+    this.bmiService.pub_temp1=99;
   }
 
   change(event:any){
