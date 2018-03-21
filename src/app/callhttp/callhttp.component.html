@@ -1,0 +1,8 @@
+<button (click)="get()">Get Data</button>
+
+{{getdata | json}}
+
+<br>
+<input type="text" [(ngModel)]="book.title">
+<input type="text" [(ngModel)]="book.author">
+<button (click)="post_data()" >submit</button>

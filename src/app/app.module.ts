@@ -24,6 +24,11 @@ import { DyclassComponent } from './dyclass/dyclass.component';
 import { JqeComponent } from './jqe/jqe.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
 import { BmiService } from './bmi.service';
+import { CallhttpComponent } from './callhttp/callhttp.component';
+import { HttpService } from './http.service';
+import {HttpClientModule} from '@angular/common/http';
+import { NgComponent } from './ng/ng.component';
+import{ ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,18 +49,22 @@ import { BmiService } from './bmi.service';
     Homework2BtnComponent,
     DyclassComponent,
     JqeComponent,
-    Lesson7Component
+    Lesson7Component,
+    CallhttpComponent,
+    NgComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgPipesModule,  //別人寫的
-
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [
-    BmiService
+    BmiService,
+    HttpService
   ], 
   bootstrap: [AppComponent]
 })

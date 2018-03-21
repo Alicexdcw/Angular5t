@@ -9,6 +9,8 @@ import { Lesson4Component } from './lesson4/lesson4.component';
 import { Lesson6Component } from './lesson6/lesson6.component';
 import { JqeComponent } from './jqe/jqe.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
+import { CallhttpComponent } from './callhttp/callhttp.component';
+import { NgComponent } from './ng/ng.component';
 
 const routes: Routes = [
 {path:'',redirectTo:'lesson1',pathMatch:'full'},
@@ -22,6 +24,8 @@ const routes: Routes = [
 {path:'dyclass/:number/:number2', component:DyclassComponent},
 {path:'jqe', component:JqeComponent},
 {path:'lesson7',component:Lesson7Component},
+{path:'callhttp',component:CallhttpComponent},
+{path:'ng',component:NgComponent},
 {path:'**', component:Lesson3Component},
 
 ];

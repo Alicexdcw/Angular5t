@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Angular book",
+      "author": "luxprotoss",
+      "id": 2
+    },
+    {
+      "title": "Angular book",
+      "author": "luxprotoss",
+      "number": "10646010",
+      "id": 3
+    },
+    {
+      "title": "Angular book",
+      "author": "luxprotoss",
+      "number": "10646010",
+      "id": 4
+    },
+    {
+      "title": "Vue book",
+      "author": "luxprotoss",
+      "id": 5
+    },
+    {
+      "title": "離散",
+      "author": "進雄",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
